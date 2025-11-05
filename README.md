@@ -8,37 +8,40 @@ Simplicity Device Manager is the new hardware management tool of Silicon Labs, w
 
 ![Simplicity Device Manager](docs/images/sdm.png)
 
-## Prerequisites
-
-- Install [SEGGER J-Link](https://www.segger.com/downloads/jlink) if you don't have it yet
-
 ## Setup
 
-1. [Download](https://github.com/SiliconLabsSoftware/simplicity-device-manager/releases) and extract Simplicity Device Manager
-2. Launch Simplicity Device Manager and check for its system tray icon
-
-#### macOS:
-
-- Executable name: `Simplicity Device Manager.app`
-- Suggested location: `Applications` folder
+1. Download and Run **[Simplicity Installer](https://www.silabs.com/software-and-tools/simplicity-studio?tab=getting-started)**
+2. Select **Advanced** or **Installation Wizard** and **Advanced**, depending on your current installs
+3. Choose and install latest **Simplicity Device Manager**
 
 #### Windows:
 
 - Executable name: `sdm-gui.exe`
-- Suggested location: `C:\SiliconLabs\simplicity-device-manager`
+- Location: `C:\Users\<username>\.silabs\slt\installs\archive\sdm-darwin-x64\simplicity-device-manager`
+
+#### macOS:
+
+- Executable name: `Simplicity Device Manager.app`
+- Location:
+  - `~/.silabs/slt/installs/archive/sdm-darwin-arm64/simplicity-device-manager` (Apple Silicon)
+  - `~/.silabs/slt/installs/archive/sdm-darwin-x64/simplicity-device-manager` (Intel)
 
 #### Linux:
 
 - Executable name: `sdm-gui`
-- Suggested location: `~/SiliconLabs/simplicity-device-manager`
+- Location: `~/.silabs/slt/installs/archive/sdm-darwin-x64/simplicity-device-manager`
 
-## Previous Versions
+## Setup - CLI
 
-For older versions, check the [Releases](https://github.com/SiliconLabsSoftware/simplicity-device-manager/releases) page.
+1. Download **[Silicon Labs Tool (SLT)](https://www.silabs.com/software-and-tools/simplicity-studio/configurator-command-line-development?tab=getting-started)** command line tool
+1. Install `./slt install sdm`
+3. Launch `./slt launch device_manager`
+
+**Note:** On Windows, use `.\slt.exe`
 
 ## Documentation
 
-If you are experiencing any unusual behavior, check [Troubleshoot](docs/troubleshoot.md).
+See [docs.silabs.com](https://docs.silabs.com/device-manager/latest/device-manager-getting-started-overview/)
 
 ## License
 
